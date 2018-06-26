@@ -1,0 +1,22 @@
+<div *ngIf="showLogin" class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>WebRTC Video Demo. Please sign in</h2>
+      <label for="usernameInput" class="sr-only" >Login</label>
+      <input type="email" id="usernameInput" class="form-control formgroup" placeholder="Login" required="" autofocus="" [(ngModel)]="localUser">
+      <button class="btn btn-lg btn-primary btnblock" (click)="login()">Sign in</button>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="showVideo" class="call-page">
+  <video #localVideo class="localVideo" autoplay></video>
+  <video #remoteVideo class="remoteVideo" autoplay></video>
+  <div class="row text-center">
+    <div class="col-md-12">
+      <input type="text" placeholder="username to call" [(ngModel)]="remoteUser"/>
+      <button class="btn-success btn" (click)="call()">Call</button>
+      <button class="btn-danger btn" (click)="hangUp()">Hang Up</button>
+    </div>
+  </div>
+</div>

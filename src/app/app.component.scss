@@ -1,0 +1,24 @@
+nav {
+  margin: 0px;
+  text-align: left;
+}
+
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  margin: 10px 0px;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-family: 'Lato';
+  margin-left: 5px;
+}
+
+nav a:hover {
+  background-color: gray;
+}
+
+nav a.active {
+  color: #039be5;
+}
